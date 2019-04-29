@@ -1,0 +1,284 @@
+@import "reset"
+@import "fonts.sass"
+@import "media"
+
+
+$primary-color : #323232
+$secondary-color : #d5ab61
+
+body
+  color: $primary-color
+  margin: 0
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+h2
+  font-size: 36px
+  font-family: BerlingskeSerif-DBdItalic, sans-serif
+
+input[type="text"]
+    font-family: SF UI Regular,sans-serif
+    color: $primary-color
+    box-sizing: border-box
+    letter-spacing: 1px
+    border: 0
+    padding: 7px 0
+    border-bottom: 1px solid #ccc
+    background-color: #fff
+    &:focus
+      outline: none
+    &::placeholder
+      font-family: SF UI Regular,sans-serif
+      color: #323232
+      font-size: 14px
+
+.container
+  max-width: 1140px
+  margin: auto
+  padding: 0 10px
+
+.btn
+  background-color: $primary-color
+  font-family: "Gotham Pro", sans-serif
+  border: none
+  color: #fff
+  text-transform: uppercase
+  font-size: 16px
+  padding: 23px 74px
+
+
+.header
+  padding-top: 40px
+  height: 900px
+  background-image: url('../img/head_bg.jpg')
+  margin-bottom: 80px
+  background-position-x: 50%
+  background-repeat: no-repeat
+  .logo
+    flex-grow: 1000
+
+
+
+.header-top
+
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+
+.phones
+  flex-grow: 1
+  align-items: center
+  display: flex
+  flex-direction: column
+  span:first-child
+    font-family: "SF UI Display Bold",sans-serif
+    font-size: 25px
+
+
+  span:last-child
+    font-family: 'SF UI Regular', sans-serif
+    font-size: 15px
+
+
+.header-inner
+  margin-top: 160px
+  max-width: 74%
+
+  h1
+    font-size: 71px
+    font-family: BerlingskeSerif-DBdItalic, sans-serif
+
+  p
+    font-size: 24px
+    font-family: "Gotham Pro", sans-serif
+    margin: 40px 0 80px 0
+    max-width: 55%
+
+
+.features-items
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: space-between
+  align-items: baseline
+  margin-bottom: 40px
+
+  .item
+    flex-basis: 20%
+
+    h3
+      font-size: 18px
+      font-family: "Gotham Pro", sans-serif
+      margin-bottom: 25px
+
+    p
+      font-family: "SF UI Regular", sans-serif
+      max-width: 100%
+      font-size: 16px
+
+
+
+.products-items
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+
+.product
+  text-align: center
+  flex-basis: 20%
+  padding: 20px
+  background-color: #f6f6f6
+  margin-bottom: 23px
+
+  span
+    display: block
+    font-family: BerlingskeSerif-DBdItalic, sans-serif
+    font-size: 24px
+    margin: 10px 0 10px 0
+
+  button
+    padding: 23px 41px !important
+
+
+
+.partner-info-blocks
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: space-between
+
+.partner-info-block
+  flex-basis: 45%
+  padding: 20px
+  background-color: #f6f6f6
+  margin-bottom: 23px
+
+  h3
+    font-family: "Gotham Pro Medium", sans-serif
+    font-size: 24px
+    margin: 0 0 25px 0
+    color: $secondary-color
+  p
+    font-size: 16px
+    font-family: "Gotham Pro", sans-serif
+    margin-bottom: 70px
+
+.delivery
+  background-image: url(../img/dost-block-bg.jpg)
+  color: #fff
+  height: 460px
+
+  h3
+    padding: 70px 0 0 0
+    font-size: 24px
+    font-family: BerlingskeSerif-DBdItalic, serif
+
+.delivery-info
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 40px 0
+
+.delivery-info-block
+  flex-basis: 50%
+  h4
+    color: $secondary-color
+    font-size: 48px
+    font-family: BerlingskeSerif-DBdItalic, serif
+
+
+  p
+    font-size: 18px
+    font-family: BerlingskeSerif-DBdItalic, serif
+    width: 75%
+    margin-top: 20px
+
+.about
+  margin: 0 0 100px 0
+  background-image: url(../img/fs-block_bg.jpg)
+  color: #fff
+  height: 460px
+
+  h3
+    color: $secondary-color
+    font-size: 48px
+    font-family: BerlingskeSerif-DBdItalic, serif
+    padding: 90px 0 0 0
+
+  p
+    margin-top: 40px
+    font-size: 18px
+    font-family: BerlingskeSerif-DBdItalic, serif
+    width: 80%
+
+.about-info
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+.about-info-block
+  flex-basis: 50%
+
+
+.catalog
+  padding-top: 150px
+  background-image: url(../img/partner_bg.jpg)
+  background-repeat: no-repeat
+  height: 575px
+  background-position-x: 50%
+
+
+.catalog-inner
+  max-width: 50%
+
+
+  p
+    font-family: 'SF UI Regular' , sans-serif
+    margin-bottom: 100px
+
+.map
+    background-image: url(../img/map.jpg)
+    height: 600px
+    margin: 0 0 83px 0
+    .container
+      display: flex
+      align-items: center
+      height: 100%
+
+.form
+    background-image: url(../img/form-bg.jpg)
+    height: 441px
+    width: 473px
+    border-radius: 8px
+    box-shadow: 0 0 54px 0 rgba(0, 0, 0, 0.09)
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    input
+      width: 67%
+      margin: 15px 0
+    #client-name
+      margin-top: 70px
+    #client-phone
+      margin-bottom: 70px
+
+.footer,
+.footer-nav
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+
+.footer-nav
+  ul
+    margin: 0 20px
+  ul li
+    margin-bottom: 15px
+  a
+    text-decoration: none
+    font-family: "SF UI Display Bold",sans-serif
+    font-size: 12px
+    text-transform: uppercase
+    color: $primary-color

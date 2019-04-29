@@ -1,0 +1,431 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+menu {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset,
+img,
+abbr {
+  border: 0; }
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal; }
+
+ul li,
+menu li {
+  list-style: none; }
+
+caption,
+th {
+  text-align: left; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+sup {
+  vertical-align: text-top; }
+
+sub {
+  vertical-align: text-bottom; }
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+
+legend {
+  color: #000; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+@font-face {
+  font-family: BerlingskeSerif-DBdItalic;
+  src: url("../font/BerlingskeSerif-DBdItalic.ttf"); }
+
+@font-face {
+  font-family: 'SF UI Display Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Medium"), url("../font/sf-ui-display-medium-58646be638f96.woff") format("woff"); }
+
+@font-face {
+  font-family: 'SF UI Display Semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Semibold"), url("../font/sf-ui-display-semibold-58646eddcae92.woff") format("woff"); }
+
+@font-face {
+  font-family: 'SF UI Display Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Display Bold"), url("../font/sf-ui-display-bold-58646a511e3d9.woff") format("woff"); }
+
+@font-face {
+  font-family: 'SF UI Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Regular "), url("../font/SFUIDisplay-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Gotham Pro Black';
+  src: url("../font/GothamPro-Black.eot");
+  src: url("../font/GothamPro-Black.eot?#iefix") format("embedded-opentype"), url("../font/GothamPro-Black.woff") format("woff"), url("../font/GothamPro-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham Pro Medium';
+  src: url("../font/GothamPro-Medium.eot");
+  src: url("../font/GothamPro-Medium.eot?#iefix") format("embedded-opentype"), url("../font/GothamPro-Medium.woff") format("woff"), url("../font/GothamPro-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham Pro Bold';
+  src: url("../font/GothamPro-Bold.eot");
+  src: url("../font/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../font/GothamPro-Bold.woff") format("woff"), url("../font/GothamPro-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../font/GothamPro.eot");
+  src: local("Gotham Pro"), local("GothamPro"), url("../font/GothamPro.eot?#iefix") format("embedded-opentype"), url("../font/GothamPro.woff") format("woff"), url("../font/GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (max-width: 768px) {
+  .header .logo img {
+    max-width: 300px; }
+  .header-inner {
+    max-width: 100% !important; }
+    .header-inner h1 {
+      font-size: 30px !important; }
+    .header-inner p {
+      max-width: 100% !important; }
+  .features-items {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center; }
+  .btn {
+    margin: 0 auto;
+    display: block; }
+  .partner-info-block {
+    flex-grow: 1; } }
+
+@media screen and (max-width: 425px) {
+  .products-items {
+    flex-direction: column !important;
+    justify-content: center !important; }
+  .delivery-info {
+    flex-direction: column; }
+  .delivery-info-block p {
+    width: 100% !important; } }
+
+body {
+  color: #323232;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h2 {
+  font-size: 36px;
+  font-family: BerlingskeSerif-DBdItalic, sans-serif; }
+
+input[type="text"] {
+  font-family: SF UI Regular,sans-serif;
+  color: #323232;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff; }
+  input[type="text"]:focus {
+    outline: none; }
+  input[type="text"]::placeholder {
+    font-family: SF UI Regular,sans-serif;
+    color: #323232;
+    font-size: 14px; }
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 10px; }
+
+.btn {
+  background-color: #323232;
+  font-family: "Gotham Pro", sans-serif;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 23px 74px; }
+
+.header {
+  padding-top: 40px;
+  height: 900px;
+  background-image: url("../img/head_bg.jpg");
+  margin-bottom: 80px;
+  background-position-x: 50%;
+  background-repeat: no-repeat; }
+  .header .logo {
+    flex-grow: 1000; }
+
+.header-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+
+.phones {
+  flex-grow: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+  .phones span:first-child {
+    font-family: "SF UI Display Bold",sans-serif;
+    font-size: 25px; }
+  .phones span:last-child {
+    font-family: 'SF UI Regular', sans-serif;
+    font-size: 15px; }
+
+.header-inner {
+  margin-top: 160px;
+  max-width: 74%; }
+  .header-inner h1 {
+    font-size: 71px;
+    font-family: BerlingskeSerif-DBdItalic, sans-serif; }
+  .header-inner p {
+    font-size: 24px;
+    font-family: "Gotham Pro", sans-serif;
+    margin: 40px 0 80px 0;
+    max-width: 55%; }
+
+.features-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 40px; }
+  .features-items .item {
+    flex-basis: 20%; }
+    .features-items .item h3 {
+      font-size: 18px;
+      font-family: "Gotham Pro", sans-serif;
+      margin-bottom: 25px; }
+    .features-items .item p {
+      font-family: "SF UI Regular", sans-serif;
+      max-width: 100%;
+      font-size: 16px; }
+
+.products-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.product {
+  text-align: center;
+  flex-basis: 20%;
+  padding: 20px;
+  background-color: #f6f6f6;
+  margin-bottom: 23px; }
+  .product span {
+    display: block;
+    font-family: BerlingskeSerif-DBdItalic, sans-serif;
+    font-size: 24px;
+    margin: 10px 0 10px 0; }
+  .product button {
+    padding: 23px 41px !important; }
+
+.partner-info-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.partner-info-block {
+  flex-basis: 45%;
+  padding: 20px;
+  background-color: #f6f6f6;
+  margin-bottom: 23px; }
+  .partner-info-block h3 {
+    font-family: "Gotham Pro Medium", sans-serif;
+    font-size: 24px;
+    margin: 0 0 25px 0;
+    color: #d5ab61; }
+  .partner-info-block p {
+    font-size: 16px;
+    font-family: "Gotham Pro", sans-serif;
+    margin-bottom: 70px; }
+
+.delivery {
+  background-image: url(../img/dost-block-bg.jpg);
+  color: #fff;
+  height: 460px; }
+  .delivery h3 {
+    padding: 70px 0 0 0;
+    font-size: 24px;
+    font-family: BerlingskeSerif-DBdItalic, serif; }
+
+.delivery-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px 0; }
+
+.delivery-info-block {
+  flex-basis: 50%; }
+  .delivery-info-block h4 {
+    color: #d5ab61;
+    font-size: 48px;
+    font-family: BerlingskeSerif-DBdItalic, serif; }
+  .delivery-info-block p {
+    font-size: 18px;
+    font-family: BerlingskeSerif-DBdItalic, serif;
+    width: 75%;
+    margin-top: 20px; }
+
+.about {
+  margin: 0 0 100px 0;
+  background-image: url(../img/fs-block_bg.jpg);
+  color: #fff;
+  height: 460px; }
+  .about h3 {
+    color: #d5ab61;
+    font-size: 48px;
+    font-family: BerlingskeSerif-DBdItalic, serif;
+    padding: 90px 0 0 0; }
+  .about p {
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: BerlingskeSerif-DBdItalic, serif;
+    width: 80%; }
+
+.about-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.about-info-block {
+  flex-basis: 50%; }
+
+.catalog {
+  padding-top: 150px;
+  background-image: url(../img/partner_bg.jpg);
+  background-repeat: no-repeat;
+  height: 575px;
+  background-position-x: 50%; }
+
+.catalog-inner {
+  max-width: 50%; }
+  .catalog-inner p {
+    font-family: 'SF UI Regular' , sans-serif;
+    margin-bottom: 100px; }
+
+.map {
+  background-image: url(../img/map.jpg);
+  height: 600px;
+  margin: 0 0 83px 0; }
+  .map .container {
+    display: flex;
+    align-items: center;
+    height: 100%; }
+
+.form {
+  background-image: url(../img/form-bg.jpg);
+  height: 441px;
+  width: 473px;
+  border-radius: 8px;
+  box-shadow: 0 0 54px 0 rgba(0, 0, 0, 0.09);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .form input {
+    width: 67%;
+    margin: 15px 0; }
+  .form #client-name {
+    margin-top: 70px; }
+  .form #client-phone {
+    margin-bottom: 70px; }
+
+.footer,
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.footer-nav ul {
+  margin: 0 20px; }
+
+.footer-nav ul li {
+  margin-bottom: 15px; }
+
+.footer-nav a {
+  text-decoration: none;
+  font-family: "SF UI Display Bold",sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #323232; }
