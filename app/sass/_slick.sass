@@ -1,0 +1,122 @@
+.carousel-wrapper   
+  position: relative
+  margin: 0 0 130px 0
+
+
+.carousel-wrapper a
+  position: relative
+  display: inline-block
+
+
+.slide-img 
+  background-color: black
+
+
+.slider-bg
+  height: 487px
+  width: 1110px
+
+
+.slick-slide 
+    /*text-align: center !important*/
+
+
+.overlay 
+  position: absolute
+  height: 100%
+  width: 100%
+  top: 0
+  left: 0
+  background: rgba(1, 1, 1, .35)
+  transition: 0.2s
+  opacity: 0
+
+
+/*a:hover */
+.carousel-wrapper a:hover .overlay 
+  z-index: 99999
+  opacity: 1
+
+
+.overlay-content 
+  color: rgb(255, 255, 255)
+  padding: 50px 100px 0 50px
+  max-width: 710px
+  /*position: absolute*/
+  /*top: 5%*/
+  /*left: 5%*/
+
+.overlay-content
+  h4
+    font-family: BerlingskeSerif-DBdItalic, sans-serif
+    font-size: 24px
+  h3
+    font-family: BerlingskeSerif-DBdItalic, sans-serif
+    font-size: 48px
+    margin: 50px 0 50px 0
+  p
+    font-family: "SF UI Regular",sans-serif
+    font-size: 18px
+
+.arrows
+  display: flex
+  margin-top: 20px
+  cursor: pointer
+
+.prev,
+.prev1
+  margin: 0 20px 0 0
+  height: 10px
+  width: 70px
+  opacity: .5
+  background: url('../img/left.jpg') no-repeat
+  transition: .3s
+  &:hover
+    opacity: 1
+
+
+.next,
+.next1
+  height: 10px
+  width: 70px
+  opacity: .5
+  background: url('../img/right.jpg') no-repeat
+  transition: .3s
+
+  &:hover
+    opacity: 1
+
+
+
+
+.reviews
+  display: flex
+
+  h3
+    font-family: "SF UI Display Bold", sans-serif
+    font-size: 24px
+    flex-grow: 100
+
+  p
+    font-size: 18px
+    flex-grow: 1000
+
+
+.font-underline
+  text-decoration: underline
+
+
+.review-from
+  font-size: 14px
+  font-family: "SF UI Display Semibold",sans-serif
+
+
+.icon
+  margin: 0 10px 0 0 !important
+
+
+.reviews-info
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  padding: 10px 0 0 30px

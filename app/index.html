@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>ОНИКС</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -24,7 +27,7 @@
         <div class="header-inner">
             <h1>Производство гипсовых 3D панелей высокого качества под заказ</h1>
             <p>Экологичный и высокопрочный гипс с идеально ровной геометрией</p>
-            <button class="btn">сделать заказ</button>
+            <button id="callbackBtn" class="btn">сделать заказ</button>
         </div>
     </div>
 </header>
@@ -54,67 +57,204 @@
     </div>
     <div class="features-items">
         <div class="item">
-            <img src="img/feature_icon25.png">
+            <img src="img/feature_icon25.png" alt="">
             <h3>Повышенная прочность</h3>
             <p>Изготавливается на высокотехнологичном оборудовании с применением высокопрочного гипса</p>
         </div>
         <div class="item">
-            <img src="img/feature_icon26.png">
+            <img src="img/feature_icon26.png" alt="">
             <h3>100% пожарная безопасность</h3>
             <p>При производстве используем сертифицированную негорючую смесь</p>
         </div>
         <div class="item">
-            <img src="img/feature_icon27.png">
+            <img src="img/feature_icon27.png" alt="">
             <h3>Легкий монтаж</h3>
             <p>Имея инструкцию и рекомендации от нас, вы с легкостью справитесь с монтажом</p>
         </div>
         <div class="item">
-            <img src="img/feature_icon28.png">
+            <img src="img/feature_icon28.png" alt="">
             <h3>Современный дизайн</h3>
             <p>Разрабатываем и производим более 100 видов популярных 3Д панелей</p>
         </div>
     </div>
 </section>
 
+<section class="samples container ">
+    <div class="carousel-wrapper">
+        <ul class="carousel">
+            <li>
+                <a href="#" onclick="return false;">
+                    <div class="slider-bg" style="background-image: url('img/slide1.jpg')"></div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>— Примеры наших работ</h4>
+                            <h3 class="color-yellow">3Д панель из глины для гостинной</h3>
+                            <!--p>
+                            <img class="slide-img img-fluid"  src="img/slide1.jpg" alt="">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua enim
+                                ad minim veniam</p-->
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="return false;">
+                    <div class="slider-bg" style="background-image: url('img/slide2.jpg')"></div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>— Примеры наших работ</h4>
+                            <h3 class="color-yellow">3Д панель из глины для гостинной</h3>
+                            <!--p>
+                            <img class="slide-img img-fluid"  src="img/slide1.jpg" alt="">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua enim
+                                ad minim veniam</p-->
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="return false;">
+
+                    <div class="slider-bg" style="background-image: url('img/slide3.jpg')"></div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>— Примеры наших работ</h4>
+                            <h3 class="color-yellow">3Д панель из глины для гостинной</h3>
+                            <!--p>
+                            <img class="slide-img img-fluid"  src="img/slide1.jpg" alt="">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua enim
+                                ad minim veniam</p-->
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="return false;">
+
+                    <div class="slider-bg" style="background-image: url('img/slide4.jpg')"></div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>— Примеры наших работ</h4>
+                            <h3 class="color-yellow">3Д панель из глины для гостинной</h3>
+                            <!--p>
+                            <img class="slide-img img-fluid"  src="img/slide1.jpg" alt="">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua enim
+                                ad minim veniam</p-->
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="return false;">
+
+                    <div class="slider-bg" style="background-image: url('img/slide5.jpg')"></div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>— Примеры наших работ</h4>
+                            <h3 class="color-yellow">3Д панель из глины для гостинной</h3>
+                            <!--p>
+                            <img class="slide-img img-fluid"  src="img/slide1.jpg" alt="">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua enim
+                                ad minim veniam</p-->
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="return false;">
+
+                    <div class="slider-bg" style="background-image: url('img/slide6.jpg')"></div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>— Примеры наших работ</h4>
+                            <h3 class="color-yellow">3Д панель из глины для гостинной</h3>
+                            <!--p>
+                            <img class="slide-img img-fluid"  src="img/slide1.jpg" alt="">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua enim
+                                ad minim veniam</p-->
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="return false;">
+
+                    <div class="slider-bg" style="background-image: url('img/slide7.jpg')"></div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>— Примеры наших работ</h4>
+                            <h3 class="color-yellow">3Д панель из глины для гостинной</h3>
+                            <!--p>
+                            <img class="slide-img img-fluid"  src="img/slide1.jpg" alt="">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua enim
+                                ad minim veniam</p-->
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+
+
+
+        </ul>
+
+
+        <div class="arrows"  >
+            <span class="prev"></span>
+            <span class="next"></span>
+        </div>
+
+    </div>
+</section>
+
+
 <section class="products container">
+    <h2>Наши популярные изделия</h2>
     <div class="products-items">
         <div class="product">
-            <img src="img/item.jpg">
+            <img src="img/item.jpg" alt="">
             <span>290 Р</span>
             <button class="btn" role="button" data-toggle="modal" data-target="#orderModal">Сделать заказ</button>
         </div>
         <div class="product">
-            <img src="img/item.jpg">
+            <img src="img/item.jpg" alt="">
             <span>290 Р</span>
             <button class="btn" role="button" data-toggle="modal" data-target="#orderModal">Сделать заказ</button>
         </div>
         <div class="product">
-            <img src="img/item.jpg">
+            <img src="img/item.jpg" alt="">
             <span>290 Р</span>
             <button class="btn" role="button" data-toggle="modal" data-target="#orderModal">Сделать заказ</button>
         </div>
         <div class="product">
-            <img src="img/item.jpg">
+            <img src="img/item.jpg" alt="">
             <span>290 Р</span>
             <button class="btn" role="button" data-toggle="modal" data-target="#orderModal">Сделать заказ</button>
         </div>
         <div class="product">
-            <img src="img/item.jpg">
+            <img src="img/item.jpg" alt="">
             <span>290 Р</span>
             <button class="btn" role="button" data-toggle="modal" data-target="#orderModal">Сделать заказ</button>
         </div>
         <div class="product">
-            <img src="img/item.jpg">
+            <img src="img/item.jpg" alt="">
             <span>290 Р</span>
             <button class="btn" role="button" data-toggle="modal" data-target="#orderModal">Сделать заказ</button>
         </div>
         <div class="product">
-            <img src="img/item.jpg">
+            <img src="img/item.jpg" alt="">
             <span>290 Р</span>
             <button class="btn" role="button" data-toggle="modal" data-target="#orderModal">Сделать заказ</button>
         </div>
         <div class="product">
-            <img src="img/item.jpg">
+            <img src="img/item.jpg" alt="">
             <span>290 Р</span>
             <button class="btn" role="button" data-toggle="modal" data-target="#orderModal">Сделать заказ</button>
         </div>
@@ -125,28 +265,28 @@
     <h2>Хотите стать партнером?<br> Мы предлагаем:</h2>
     <div class="features-items">
         <div class="item">
-            <img src="img/feature_icon1.png">
+            <img src="img/feature_icon1.png" alt="">
             <h3>Низкие цены</h3>
             <p>Наши цены ниже рыночных в среднем на 25-30%</p>
         </div>
         <div class="item">
-            <img src="img/feature_icon2.png">
+            <img src="img/feature_icon2.png" alt="">
             <h3>Широкий ассортимент</h3>
             <p>Производим более 100 видов гипсовых 3D панелей на любой вкус</p>
         </div>
         <div class="item">
-            <img src="img/feature_icon3.png">
+            <img src="img/feature_icon3.png" alt="">
             <h3>Отсрочка платежа</h3>
             <p>Предоставляем индивидуальные условия оплаты</p>
         </div>
         <div class="item">
-            <img src="img/feature_icon4.png">
+            <img src="img/feature_icon4.png" alt="">
             <h3>Рекламная поддержка</h3>
             <p>Помогаем партнерам найти клиентов за счет интернет продвижения</p>
         </div>
     </div>
     <div class="partner-info-blocks">
-        <div class="partner-info-block">
+        <div class="partner-info-block" >
             <h3>Дизайнерам</h3>
             <p>Специально для Вас мы разработали условия, которые упростит Вам работу и позволят дополнительно зарабатывать</p>
             <button class="btn" role="button" data-toggle="modal" data-target="#partnerModal" >Узнать подробнее</button>
@@ -186,6 +326,58 @@
 
 </section>
 
+<section class="review container ">
+
+    <h2>Отзывы клиентов о нашей работе</h2>
+
+
+    <div class="carousel-wrapper">
+
+
+        <ul class="carousel1">
+            <li>
+                <div class="reviews">
+
+                    <img class="review-img" src="img/review_img.jpg" alt="">
+                    <div class="reviews-info">
+                        <h3>3Д панель из глины для гостинной</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                            excepteur sint occaecat cupidatat non proident</p>
+                        <span class="review-from font-underline"><img class="icon" src="img/icon-man.jpg" alt=""> Игорь Николаевич</span>
+                        <span class="review-from"><img class="icon" src="img/icon-calendar.jpg" alt=""> 14.03.2019</span>
+                    </div>
+                </div>
+            </li>
+              <li>
+                <div class="reviews">
+
+                    <img class="review-img" src="img/review_img.jpg" alt="">
+                    <div class="reviews-info">
+                        <h3>3Д панель из глины для гостинной</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                            excepteur sint occaecat cupidatat non proident</p>
+                        <span class="review-from font-underline"><img class="icon" src="img/icon-man.jpg" alt=""> Игорь Николаевич</span>
+                        <span class="review-from"><img class="icon" src="img/icon-calendar.jpg" alt=""> 14.03.2019</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+
+        <div class="arrows">
+            <span class="prev1"></span>
+            <span class="next1"></span>
+        </div>
+    </div>
+
+
+</section>
 <section class="about">
     <div class="container">
         <h3>О нас</h3>
@@ -238,36 +430,68 @@
 
 <footer class="footer container">
     <div class="footer-site-name">
-    <p>Sitename</p>
+        <p>Sitename</p>
         <span>
-(C) 2019 Название компании<br>
-Производство 3Д - панелей в Москве</span>
+            (C) 2019 Название компании<br>
+            Производство 3Д - панелей в Москве
+        </span>
     </div>
     <div class="footer-nav">
-       <ul >
-                     <li ><a  href="#">Портфолио</a></li>
-                     <li ><a  href="#">каталог</a></li>
-                     <li><a  href="#">Задать вопрос</a></li>
+        <ul>
+            <li><a  href="#">Портфолио</a></li>
+            <li><a  href="#">каталог</a></li>
+            <li><a  href="#">Задать вопрос</a></li>
 
-                </ul>
-        <ul >
-                    <li ><a  href="#">дилерам</a></li>
-                    <li ><a  href="#">строителям</a></li>
-                    <li ><a  href="#">дизайнерам</a></li>
+        </ul>
+        <ul>
+            <li><a  href="#">дилерам</a></li>
+            <li><a  href="#">строителям</a></li>
+            <li><a  href="#">дизайнерам</a></li>
 
-                </ul>
+        </ul>
     </div>
     <div class="contacts">
-     <h4>Адреса диллеров в Челябинске</h4>
-                  <p><span>Камелот-Чел,</span> ЦИ Магнит, Труда, 185а 204 секция; 2 этаж; правое крыло <br>
-                        <span>Интерьер-Строй,</span> Победы проспект, 177 109 офис; 1 этаж <br>
-                        <span>Терракот,</span> Карла Маркса, 28 <br>
-                        <span>Идеи для дома,</span> Троицкий тракт, 21 к2 16 секция; 1 этаж,<br>
-                         Новоградский проспект, 64 <br>
-                        <span>СДМ,</span> Свердловский тракт, 1ж</p>
+        <h4>Адреса диллеров в Челябинске</h4>
+        <p>
+            <span>Камелот-Чел,</span> ЦИ Магнит, Труда, 185а 204 секция; 2 этаж; правое крыло<br>
+            <span>Интерьер-Строй,</span> Победы проспект, 177 109 офис; 1 этаж<br>
+            <span>Терракот,</span> Карла Маркса, 28<br>
+            <span>Идеи для дома,</span> Троицкий тракт, 21 к2 16 секция; 1 этаж,<br>
+            Новоградский проспект, 64<br>
+            <span>СДМ,</span> Свердловский тракт, 1ж
+        </p>
     </div>
 
 
 </footer>
+<div id="myModal" class="modal">
+
+
+  <div class="modal-content">
+      <div class="modal-header">
+        <h2>Свяжитесь с нами! </h2>
+      <span class="close">&times;</span>
+      </div>
+
+    <div class="modal-form">
+
+          <p>Заполните оба поля и нажмите на кнопку, после чего наш оператор перезвонит вам</p>
+          <input style="    margin-bottom: 15px;" type="text" name="client_name" placeholder="Ваше имя">
+                <input style="    margin-bottom: 70px;" type="text" name="client_phone" placeholder="Сотовый номер">
+
+
+
+               <button class="btn" >заказать звонок</button>
+    </div>
+
+  </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<script defer src="js/main.js"></script>
+
+
 </body>
 </html>
