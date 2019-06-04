@@ -620,7 +620,8 @@ input[type="text"] {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 40px; }
 
 .footer-nav ul {
   margin: 0 20px; }
