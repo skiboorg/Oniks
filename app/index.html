@@ -21,13 +21,13 @@
             </div>
             <div class="phones">
                 <span>8 800 800 55 55</span>
-                <span><img src="img/phone.png" alt=""> Заказать звонок</span>
+                <span onclick="showmodal('callback')"> <img src="img/phone.png" alt=""> Заказать звонок</span>
             </div>
         </div>
         <div class="header-inner">
             <h1>Производство гипсовых 3D панелей высокого качества под заказ</h1>
             <p>Экологичный и высокопрочный гипс с идеально ровной геометрией</p>
-            <button id="callbackBtn" class="btn">сделать заказ</button>
+            <button onclick="showmodal('order')" class="btn">сделать заказ</button>
         </div>
     </div>
 </header>
@@ -79,7 +79,7 @@
     </div>
 </section>
 
-<section class="samples container ">
+<section id="portfolio" class="samples container ">
     <div class="carousel-wrapper">
         <ul class="carousel">
             <li>
@@ -88,7 +88,7 @@
                     <div class="overlay">
                         <div class="overlay-content">
                             <h4>— Примеры наших работ</h4>
-                            <h3 class="color-yellow">3Д панель из глины для гостинной</h3>
+                            <h3 class="color-yellow">3Д панель из гипса "Бамбук"</h3>
                             <!--p>
                             <img class="slide-img img-fluid"  src="img/slide1.jpg" alt="">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit sed
@@ -104,7 +104,7 @@
                     <div class="overlay">
                         <div class="overlay-content">
                             <h4>— Примеры наших работ</h4>
-                            <h3 class="color-yellow">3Д панель из глины для гостинной</h3>
+                            <h3 class="color-yellow">3Д панель из гипса "Водопад"</h3>
                             <!--p>
                             <img class="slide-img img-fluid"  src="img/slide1.jpg" alt="">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit sed
@@ -121,7 +121,7 @@
                     <div class="overlay">
                         <div class="overlay-content">
                             <h4>— Примеры наших работ</h4>
-                            <h3 class="color-yellow">3Д панель из глины для гостинной</h3>
+                            <h3 class="color-yellow">3Д панель из гипса "Волна атлантическая"</h3>
                             <!--p>
                             <img class="slide-img img-fluid"  src="img/slide1.jpg" alt="">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit sed
@@ -138,7 +138,7 @@
                     <div class="overlay">
                         <div class="overlay-content">
                             <h4>— Примеры наших работ</h4>
-                            <h3 class="color-yellow">3Д панель из глины для гостинной</h3>
+                            <h3 class="color-yellow">3Д панель из гипса "Волна двойная"</h3>
                             <!--p>
                             <img class="slide-img img-fluid"  src="img/slide1.jpg" alt="">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit sed
@@ -155,7 +155,7 @@
                     <div class="overlay">
                         <div class="overlay-content">
                             <h4>— Примеры наших работ</h4>
-                            <h3 class="color-yellow">3Д панель из глины для гостинной</h3>
+                            <h3 class="color-yellow">3Д панель из гипса "Зебра золотая"</h3>
                             <!--p>
                             <img class="slide-img img-fluid"  src="img/slide1.jpg" alt="">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit sed
@@ -172,7 +172,7 @@
                     <div class="overlay">
                         <div class="overlay-content">
                             <h4>— Примеры наших работ</h4>
-                            <h3 class="color-yellow">3Д панель из глины для гостинной</h3>
+                            <h3 class="color-yellow">3Д панель из гипса "Кожа вытянутая"</h3>
                             <!--p>
                             <img class="slide-img img-fluid"  src="img/slide1.jpg" alt="">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit sed
@@ -189,7 +189,41 @@
                     <div class="overlay">
                         <div class="overlay-content">
                             <h4>— Примеры наших работ</h4>
-                            <h3 class="color-yellow">3Д панель из глины для гостинной</h3>
+                            <h3 class="color-yellow">3Д панель из гипса "Песочная волна"</h3>
+                            <!--p>
+                            <img class="slide-img img-fluid"  src="img/slide1.jpg" alt="">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua enim
+                                ad minim veniam</p-->
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="return false;">
+
+                    <div class="slider-bg" style="background-image: url('img/slide8.jpg')"></div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>— Примеры наших работ</h4>
+                            <h3 class="color-yellow">3Д панель из гипса "Скала"</h3>
+                            <!--p>
+                            <img class="slide-img img-fluid"  src="img/slide1.jpg" alt="">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua enim
+                                ad minim veniam</p-->
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="return false;">
+
+                    <div class="slider-bg" style="background-image: url('img/slide9.jpg')"></div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>— Примеры наших работ</h4>
+                            <h3 class="color-yellow">3Д панель из гипса "Шестигранник"</h3>
                             <!--p>
                             <img class="slide-img img-fluid"  src="img/slide1.jpg" alt="">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit sed
@@ -215,53 +249,62 @@
 </section>
 
 
-<section class="products container">
+<section  class="products container">
     <h2>Наши популярные изделия</h2>
     <div class="products-items">
         <div class="product">
-            <img src="img/item.jpg" alt="">
-            <span>290 Р</span>
-            <button class="btn"  data-toggle="modal" data-target="#orderModal">Сделать заказ</button>
+            <img src="img/item1.jpg" alt="">
+            <p>арт. Бамбук</p>
+            <span>290 Р/шт</span>
+            <button class="btn"  onclick="showmodal('order')">Сделать заказ</button>
         </div>
         <div class="product">
-            <img src="img/item.jpg" alt="">
-            <span>290 Р</span>
-            <button class="btn"  data-toggle="modal" data-target="#orderModal">Сделать заказ</button>
+            <img src="img/item2.jpg" alt="">
+            <p>арт. Волна атлантическая</p>
+
+            <span>290 Р/шт</span>
+            <button class="btn"  onclick="showmodal('order')">Сделать заказ</button>
         </div>
         <div class="product">
-            <img src="img/item.jpg" alt="">
-            <span>290 Р</span>
-            <button class="btn"  data-toggle="modal" data-target="#orderModal">Сделать заказ</button>
+            <img src="img/item3.jpg" alt="">
+            <p>арт. Волна двойная</p>
+            <span>290 Р/шт</span>
+            <button class="btn"  onclick="showmodal('order')">Сделать заказ</button>
         </div>
         <div class="product">
-            <img src="img/item.jpg" alt="">
-            <span>290 Р</span>
-            <button class="btn"  data-toggle="modal" data-target="#orderModal">Сделать заказ</button>
+            <img src="img/item4.jpg" alt="">
+            <p>арт. Кожа вытянутая</p>
+            <span>290 Р/шт</span>
+            <button class="btn"  onclick="showmodal('order')">Сделать заказ</button>
         </div>
         <div class="product">
-            <img src="img/item.jpg" alt="">
-            <span>290 Р</span>
-            <button class="btn"  data-toggle="modal" data-target="#orderModal">Сделать заказ</button>
+            <img src="img/item5.jpg" alt="">
+            <p>арт. Песочная волна</p>
+            <span>290 Р/шт</span>
+            <button class="btn"  onclick="showmodal('order')">Сделать заказ</button>
         </div>
         <div class="product">
-            <img src="img/item.jpg" alt="">
-            <span>290 Р</span>
-            <button class="btn"  data-toggle="modal" data-target="#orderModal">Сделать заказ</button>
+            <img src="img/item6.jpg" alt="">
+            <p>арт. Рози</p>
+            <span>290 Р/шт</span>
+            <button class="btn"  onclick="showmodal('order')">Сделать заказ</button>
         </div>
         <div class="product">
-            <img src="img/item.jpg" alt="">
-            <span>290 Р</span>
-            <button class="btn"  data-toggle="modal" data-target="#orderModal">Сделать заказ</button>
+            <img src="img/item7.jpg" alt="">
+            <p>арт. Скала</p>
+            <span>290 Р/шт</span>
+            <button class="btn"  onclick="showmodal('order')">Сделать заказ</button>
         </div>
         <div class="product">
-            <img src="img/item.jpg" alt="">
-            <span>290 Р</span>
-            <button class="btn"  data-toggle="modal" data-target="#orderModal">Сделать заказ</button>
+            <img src="img/item8.jpg" alt="">
+            <p>арт. Шестигранник</p>
+            <span>290 Р/шт</span>
+            <button class="btn"  onclick="showmodal('order')">Сделать заказ</button>
         </div>
     </div>
 </section>
 
-<section class="partner-info container">
+<section id="partner" class="partner-info container">
     <h2>Хотите стать партнером?<br> Мы предлагаем:</h2>
     <div class="features-items">
         <div class="item">
@@ -289,12 +332,12 @@
         <div class="partner-info-block" >
             <h3>Дизайнерам</h3>
             <p>Специально для Вас мы разработали условия, которые упростит Вам работу и позволят дополнительно зарабатывать</p>
-            <button class="btn"  data-toggle="modal" data-target="#partnerModal" >Узнать подробнее</button>
+            <button class="btn"  onclick="showmodal('dizain')" >Узнать подробнее</button>
         </div>
         <div class="partner-info-block">
             <h3>Дилерам</h3>
             <p>Наша дилерская программа позволит Вам предоставлять Вашим клиентам лучшие цены и качественную продукцию в срок</p>
-            <button class="btn"  data-toggle="modal" data-target="#partnerModal">Узнать подробнее</button>
+            <button class="btn"  onclick="showmodal('diler')">Узнать подробнее</button>
         </div>
     </div>
 </section>
@@ -346,15 +389,15 @@
                             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
                             excepteur sint occaecat cupidatat non proident</p>
-                        <span class="review-from font-underline"><img class="icon" src="img/icon-man.jpg" alt=""> Игорь Николаевич</span>
-                        <span class="review-from"><img class="icon" src="img/icon-calendar.jpg" alt=""> 14.03.2019</span>
+                        <!--<span class="review-from font-underline"><img class="icon" src="img/icon-man.jpg" alt=""> Игорь Николаевич</span>-->
+                        <!--<span class="review-from"><img class="icon" src="img/icon-calendar.jpg" alt=""> 14.03.2019</span>-->
                     </div>
                 </div>
             </li>
-              <li>
+            <li>
                 <div class="reviews">
 
-                    <img class="review-img" src="img/review_img.jpg" alt="">
+                    <img class="review-img" src="img/review_img1.jpg" alt="">
                     <div class="reviews-info">
                         <h3>3Д панель из глины для гостинной</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -362,11 +405,28 @@
                             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
                             excepteur sint occaecat cupidatat non proident</p>
-                        <span class="review-from font-underline"><img class="icon" src="img/icon-man.jpg" alt=""> Игорь Николаевич</span>
-                        <span class="review-from"><img class="icon" src="img/icon-calendar.jpg" alt=""> 14.03.2019</span>
+                        <!--<span class="review-from font-underline"><img class="icon" src="img/icon-man.jpg" alt=""> Игорь Николаевич</span>-->
+                        <!--<span class="review-from"><img class="icon" src="img/icon-calendar.jpg" alt=""> 14.03.2019</span>-->
                     </div>
                 </div>
             </li>
+            <li>
+                <div class="reviews">
+
+                    <img class="review-img" src="img/review_img2.jpg" alt="">
+                    <div class="reviews-info">
+                        <h3>3Д панель из глины для гостинной</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                            excepteur sint occaecat cupidatat non proident</p>
+                        <!--<span class="review-from font-underline"><img class="icon" src="img/icon-man.jpg" alt=""> Игорь Николаевич</span>-->
+                        <!--<span class="review-from"><img class="icon" src="img/icon-calendar.jpg" alt=""> 14.03.2019</span>-->
+                    </div>
+                </div>
+            </li>
+
         </ul>
 
 
@@ -382,12 +442,12 @@
     <div class="container">
         <h3>О нас</h3>
         <div class="about-info">
-            <div class="about-info-block">
+            <div class="about-info-block first-about">
                 <p>Лаборатория декоративных покрытий Оникс была создана в 2016 году на базе
                     крупного поставщика отделочных и декоративных материалов
                 </p>
             </div>
-            <div class="about-info-block">
+            <div class="about-info-block second-about">
                 <p>Наша миссия - изготовление современных и качественных декоративно-отделочных материалов,
                     которые будут отвечать всем требованиям экологичности, безопасности и прогрессивного дизайна
                 </p>
@@ -398,7 +458,7 @@
 
 </section>
 
-<section class="catalog">
+<section id="catalog" class="catalog">
     <div class="container">
         <div class="catalog-inner ">
             <h2>Получите полный каталог продукции бесплатно</h2>
@@ -407,20 +467,23 @@
                 Если вы являетесь кем-то из них, пожалуйста отправьте нам запрос на получение полного каталога нашей
                 продукции, абсолютно бесплатно
             </p>
-            <button class="btn"  data-toggle="modal" data-target="#catalogModal">Получить бесплатный каталог</button>
+            <button class="btn"  onclick="showmodal('catalog')">Получить бесплатный каталог</button>
         </div>
     </div>
 
 </section>
 
-<section class="map">
+<section id="question" class="map">
     <div class="container">
-        <div class="form">
+
+        <form class="form" method="post" onsubmit="homeCallback(event);">
             <h2>Задайте вопрос!</h2>
-            <input id="client-name" type="text"  name="client-name" placeholder="Ваше имя">
-            <input id="client-phone" type="text" name="client-phone" placeholder="Сотовый номер">
-            <button class="btn " >заказать звонок</button>
-        </div>
+            <input id="home-client-name" required="required" type="text"  name="client-name" placeholder="Ваше имя">
+            <input id="home-client-phone" type="text" name="client-phone" placeholder="Сотовый номер">
+            <button id="home-submit-btn" class="btn " type="submit">заказать звонок</button>
+        </form>
+
+
 
     </div>
 
@@ -430,66 +493,58 @@
 
 <footer class="footer container">
     <div class="footer-site-name">
-        <p>Sitename</p>
+        <p>Onix174.ru</p>
         <span>
-            (C) 2019 Название компании<br>
-            Производство 3Д - панелей в Москве
+            (C) 2019 ОНИКС<br>
+            Производство 3Д - панелей в Челябинске
         </span>
     </div>
     <div class="footer-nav">
         <ul>
-            <li><a  href="#">Портфолио</a></li>
-            <li><a  href="#">каталог</a></li>
-            <li><a  href="#">Задать вопрос</a></li>
+            <li><a  href="#portfolio">Портфолио</a></li>
+            <li><a  href="#catalog">каталог</a></li>
+            <li><a  href="#question">Задать вопрос</a></li>
 
         </ul>
         <ul>
-            <li><a  href="#">дилерам</a></li>
-            <li><a  href="#">строителям</a></li>
-            <li><a  href="#">дизайнерам</a></li>
+            <li><a  href="#partner">дилерам</a></li>
+            <li><a  href="#partner">дизайнерам</a></li>
 
         </ul>
     </div>
     <div class="contacts">
         <h4>Адреса диллеров в Челябинске</h4>
         <p>
-            <span>Камелот-Чел,</span> ЦИ Магнит, Труда, 185а 204 секция; 2 этаж; правое крыло<br>
-            <span>Интерьер-Строй,</span> Победы проспект, 177 109 офис; 1 этаж<br>
-            <span>Терракот,</span> Карла Маркса, 28<br>
-            <span>Идеи для дома,</span> Троицкий тракт, 21 к2 16 секция; 1 этаж,<br>
-            Новоградский проспект, 64<br>
+            <span>Камелот-Чел,</span> ЦИ Магнит, Труда, 185а 204 секция; 2 этаж; правое крыло<br><br>
+            <span>Интерьер-Строй,</span> Победы проспект, 177 109 офис; 1 этаж<br><br>
+            <span>Терракот,</span> Карла Маркса, 28<br><br>
+            <span>Идеи для дома,</span> Троицкий тракт, 21 к2 16 секция; 1 этаж,<br><br>
+            Новоградский проспект, 64<br><br>
             <span>СДМ,</span> Свердловский тракт, 1ж
         </p>
     </div>
 
 
 </footer>
-<div id="myModal" class="modal">
-
-
-  <div class="modal-content">
-      <div class="modal-header">
-        <h2>Свяжитесь с нами! </h2>
-      <span class="close">&times;</span>
-      </div>
-
-    <div class="modal-form">
-
-          <p>Заполните оба поля и нажмите на кнопку, после чего наш оператор перезвонит вам</p>
-          <input style="    margin-bottom: 15px;" type="text" name="client_name" placeholder="Ваше имя">
-                <input style="    margin-bottom: 70px;" type="text" name="client_phone" placeholder="Сотовый номер">
-
-
-
-               <button class="btn" >заказать звонок</button>
+<div id="Modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="modal-header">Свяжитесь с нами! </h2>
+            <span class="close">&times;</span>
+        </div>
+        <form class="modal-form" method="post" onsubmit="modalCallback(event);">
+            <p id="modal-text">Заполните оба поля и нажмите на кнопку, после чего наш оператор перезвонит вам</p>
+            <input id="modal-client-name" required="required" style="    margin-bottom: 15px;" type="text" name="client_name" placeholder="Ваше имя">
+            <input id="modal-client-phone" required="required" style="    margin-bottom: 50px;" type="text" name="client_phone" placeholder="Сотовый номер">
+            <button id="modal-button" class="btn" type="submit" >заказать звонок</button>
+        </form>
     </div>
-
-  </div>
-
 </div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<script  src="js/inputMask.js"></script>
 <script defer src="js/main.js"></script>
 
 

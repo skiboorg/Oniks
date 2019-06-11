@@ -1,9 +1,8 @@
 @import "reset"
 @import "fonts.sass"
-@import "media"
 @import "slick"
 @import "modal"
-
+@import "media"
 $primary-color : #323232
 $secondary-color : #d5ab61
 
@@ -85,6 +84,9 @@ input[type="text"]
   span:last-child
     font-family: 'SF UI Regular', sans-serif
     font-size: 15px
+    cursor: pointer
+    &:hover
+      text-decoration: underline
 
 
 .header-inner
@@ -141,6 +143,11 @@ input[type="text"]
   padding: 20px
   background-color: #f6f6f6
   margin-bottom: 23px
+
+  p
+    font-family: BerlingskeSerif-DBdItalic, sans-serif
+    font-size: 14px
+    margin-top: 10px
 
   span
     display: block
